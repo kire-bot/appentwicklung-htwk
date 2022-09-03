@@ -1,27 +1,22 @@
-.newsfeed h2 {
-  font-size: 20px;
-  padding: 0 var(--content-gap);
-}
-
 .newsfeed .entry {
   border-bottom: 1px solid var(--color-gray-light);
   padding: 8px 16px;
   display: flex;
   flex-direction: row;
+  gap: 8px;
 }
 
-.newsfeed .entry .image {
+.newsfeed .entry .avatar {
   width: 15%;
 }
 
-.newsfeed .entry .image img {
+.newsfeed .entry .avatar img {
   border-radius: 50%;
   width: 100%;
 }
 
 .newsfeed .entry .content {
   width: 85%;
-  margin-left: 8px;
 }
 
 .newsfeed .entry .content .name {

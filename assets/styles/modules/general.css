@@ -7,3 +7,12 @@ body {
   max-width: 430px;
   margin: 0 auto;
 }
+
+main {
+  margin-top: 70px;
+}
+
+main h2 {
+  font-size: 20px;
+  padding: 0 var(--content-gap);
+}
