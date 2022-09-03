@@ -4,8 +4,8 @@
   "description": "Das falsche Twitter.",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#3b9923",
-  "theme_color": "#3b9923",
+  "background_color": "#4da5a2",
+  "theme_color": "#4da5a2",
   "icons": [
     {
       "src": "/assets/images/icon.png",
