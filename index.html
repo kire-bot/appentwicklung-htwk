@@ -22,6 +22,21 @@
   <template id="foo">
     <div>Moin</div>
   </template>
+
+  <header>
+    <sl-icon-button id="open-drawer" name="list" label="Menü"></sl-icon-button>
+    <sl-drawer label="Menü" placement="start" class="drawer">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/pages/about-us.html">Über uns</a>
+        <a href="/pages/privacy.html">Datenschutz</a>
+        <a href="/pages/imprint.html">Impressum</a>
+      </nav>
+    </sl-drawer>
+  </header>
+
+
   <main>
     <h1>Hi there!</h1>
     <h2>I am a simple PWA in plain JS :)</h2>

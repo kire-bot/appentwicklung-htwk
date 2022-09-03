@@ -1,2 +1,4 @@
+@import "./modules/variables.css";
 @import "./modules/general.css";
 @import "./modules/buttons.css";
+@import "./modules/header.css";
