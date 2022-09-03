@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 @import "./modules/variables.css";
 @import "./modules/general.css";
 @import "./modules/buttons.css";
 @import "./modules/header.css";
+@import "./modules/newsfeed.css";

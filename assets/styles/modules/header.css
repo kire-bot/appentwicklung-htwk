@@ -1,15 +1,23 @@
 header {
-  padding: 4px 8px;
+  padding: 4px 12px;
   background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header sl-icon-button::part(base) {
   color: #fff;
   font-size: 28px;
+  margin-left: -4px;
 }
 
 header sl-drawer {
   --size: 75%;
+  --body-spacing: 0 20px;
+  color: #000;
 }
 
 sl-drawer nav {
@@ -21,5 +29,14 @@ sl-drawer nav {
 sl-drawer nav a {
   text-decoration: none;
   color: var(--color-primary-dark);
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+sl-drawer nav a sl-icon {
+  font-size: 18px;
+  margin-right: 4px;
 }

@@ -1,7 +1,7 @@
 {
-  "name": "A Simple PWA",
-  "short_name": "PWA",
-  "description": "A little Test-App as PWA.",
+  "name": "Fake Twitter",
+  "short_name": "FakeTwitter",
+  "description": "Das falsche Twitter.",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#3b9923",

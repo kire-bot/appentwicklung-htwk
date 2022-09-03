@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/assets/images/icon.png" />
-  <title>A Simple PWA</title>
+  <title>Fake Twitter</title>
 
   <link rel="manifest" href="/manifest.json">
 
@@ -19,31 +19,86 @@
 </head>
 
 <body>
-  <template id="foo">
-    <div>Moin</div>
-  </template>
-
   <header>
-    <sl-icon-button id="open-drawer" name="list" label="Menü"></sl-icon-button>
+    <sl-icon-button id="open-drawer" name="twitter" label="Menü"></sl-icon-button>
+    <div><strong>Fake Twitter</strong></div>
+
     <sl-drawer label="Menü" placement="start" class="drawer">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       <nav>
-        <a href="/index.html">Home</a>
-        <a href="/pages/about-us.html">Über uns</a>
-        <a href="/pages/privacy.html">Datenschutz</a>
-        <a href="/pages/imprint.html">Impressum</a>
+        <a href="/index.html">
+          <sl-icon name="house-door"></sl-icon>Home
+        </a>
+        <a href="/pages/profile.html"><sl-icon name="person"></sl-icon>Dein Profil</a>
+        <a href="/pages/privacy.html"><sl-icon name="shield-lock"></sl-icon>Datenschutz</a>
+        <a href="/pages/imprint.html"><sl-icon name="info-circle"></sl-icon>Impressum</a>
       </nav>
     </sl-drawer>
   </header>
 
-
   <main>
-    <h1>Hi there!</h1>
-    <h2>I am a simple PWA in plain JS :)</h2>
+    <div class="newsfeed">
+      <h2>Newsfeed</h2>
+      <div class="entry">
+        <div class="image">
+          <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="name">Mark <span>@markiu</span></div>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem beatae aspernatur provident obcaecati
+            blanditiis incidunt sapiente eum, error ab voluptatibus fugiat omnis perspiciatis exercitationem
+            reprehenderit
+            optio dignissimos earum. Accusamus.
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="image">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="name">Julia <span>@userjulia</span></div>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem beatae aspernatur provident obcaecati
+            blanditiis incidunt sapiente eum, error ab voluptatibus fugiat omnis perspiciatis exercitationem
+            reprehenderit
+            optio dignissimos earum. Accusamus.
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="image">
+          <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="name">Marie <span>@ma-rie</span></div>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem beatae aspernatur provident obcaecati
+            blanditiis incidunt sapiente eum, error ab voluptatibus fugiat omnis perspiciatis exercitationem
+            reprehenderit
+            optio dignissimos earum. Accusamus.
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="image">
+          <img src="https://randomuser.me/api/portraits/men/63.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="name">Tom <span>@iamtom</span></div>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem beatae aspernatur provident obcaecati
+            blanditiis incidunt sapiente eum, error ab voluptatibus fugiat omnis perspiciatis exercitationem
+            reprehenderit
+            optio dignissimos earum. Accusamus.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <button class="button">Ich bin ein Button</button>
+    <!-- <button class="button">Ich bin ein Button</button>
     <br>
-    <a href="/" class="button">Ich bin ein Link</a>
+    <a href="/" class="button">Ich bin ein Link</a> -->
   </main>
 </body>
 
