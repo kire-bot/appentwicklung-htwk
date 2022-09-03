@@ -1,0 +1,16 @@
+{
+  "name": "A Simple PWA",
+  "short_name": "PWA",
+  "description": "A little Test-App as PWA.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#3b9923",
+  "theme_color": "#3b9923",
+  "icons": [
+    {
+      "src": "/assets/images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
