@@ -27,18 +27,21 @@
 
 ## Entwicklung
 
-// Todo
+**Entwicklungsserver starten** – In VS-Code unten rechts auf "Go Live" klicken. Dadruch wird über die Live Server Erweiterung ein Server gestartet. Der Browser öffnet automatisch einen neuen Tab unter zB `127.0.0.1:5500`.
 
-1. Entwicklungsserver starten – In VS-Code unten rechts auf "Go Live" klicken. Dadruch wird über die Live Server Erweiterung ein Server gestartet. Der Browser öffnet automatisch einen neuen Tab unter zB `127.0.0.1:5500`.
+**Code schreiben** – Wird der Code der App geändert, sind die Änderungen im Browser sichtbar. Die Seite aktualisiert sich bei Änderungen von HTML-Dateien automatisch. Bei allen anderen muss die Seite manuell neu geladen werden.
 
-2. Code schreiben – Wir der Code der App geändert, sind die Änderungen im Browser sichtbar. Die Seite aktualisiert sich bei Änderungen von HTML-Dateien automatisch. Bei allen anderen muss die Seite manuell neu geladen werden.
-
-- Mobil
-
-Entwickler-Ansicht im Browser öffnen:
+**App debuggen** – Entwickler-Ansicht im Browser öffnen:
 
 - Windows: `Strg + Shift + I`
 - Mac: `Option + Command + I`
+
+**PWA auf dem Smartphone entwickeln** – IPv4-Adresse herausfinden:
+
+- Mac: Systemeinstellungen > Netzwerk > Status zeigt die IPv4-Adresse
+- Windows: Start > Einstellungen > Netzwerk und Internet > WLAN Eigenschaften > IPv4-Adresse
+
+Adresse, zB im Format `192.168.xx.xx`, mit angehangenem Port (in VS-Code unten rechts) im Smartphone-Browser eingeben (`192.168.2.311:5500`).
 
 ## Components mit Shoelace
 
