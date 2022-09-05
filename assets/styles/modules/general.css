@@ -6,10 +6,7 @@ html {
 body {
   max-width: 430px;
   margin: 0 auto;
-}
-
-main {
-  margin-top: 70px;
+  padding-top: 52px;
 }
 
 main h2 {

@@ -29,7 +29,7 @@
 
 **Entwicklungsserver starten** – In VS-Code unten rechts auf "Go Live" klicken. Dadruch wird über die Live Server Erweiterung ein Server gestartet. Der Browser öffnet automatisch einen neuen Tab unter zB `127.0.0.1:5500`.
 
-**Code schreiben** – Wird der Code der App geändert, sind die Änderungen im Browser sichtbar. Die Seite aktualisiert sich bei Änderungen von HTML-Dateien automatisch. Bei allen anderen muss die Seite manuell neu geladen werden.
+**Code schreiben** – Wird der Code der App geändert, sind die Änderungen im Browser sichtbar. Die Seite aktualisiert sich bei Änderungen von HTML-Dateien automatisch. Bei allen anderen muss die Seite evtl. manuell neu geladen werden.
 
 **App debuggen** – Entwickler-Ansicht im Browser öffnen:
 
