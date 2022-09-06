@@ -15,34 +15,30 @@
     src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.82/dist/shoelace.js"></script>
 
   <link rel="stylesheet" href="/assets/styles/index.css">
-  <script type="module" src="/assets/scripts/index.js"></script>
+  <script defer type="text/javascript" src="/assets/scripts/index.js"></script>
 </head>
 
 <body>
   <header>
-    <sl-icon-button id="open-drawer" name="twitter" label="Menü"></sl-icon-button>
+    <sl-icon-button id="go-back" name="chevron-left" label="Zurück"></sl-icon-button>
     <div><strong>Fake Twitter</strong></div>
-
-    <sl-drawer label="Menü" placement="start" class="drawer">
-      <nav>
-        <a href="/index.html">
-          <sl-icon name="house-door"></sl-icon>Home
-        </a>
-        <a href="/pages/profile.html">
-          <sl-icon name="person"></sl-icon>Dein Profil
-        </a>
-        <a href="/pages/privacy.html">
-          <sl-icon name="shield-lock"></sl-icon>Datenschutz
-        </a>
-        <a href="/pages/imprint.html">
-          <sl-icon name="info-circle"></sl-icon>Impressum
-        </a>
-      </nav>
-    </sl-drawer>
   </header>
 
   <main>
     <h2>Einstellungen</h2>
+
+    <ul class="settings-list">
+      <li>
+        <a href="./profile-settings.html">Profil-Einstellungen</a>
+      </li>
+      <li>
+        <a href="./help.html">Hilfe</a>
+      </li>
+      <li>
+        <a href="#">Benachrichtigungen</a>
+      </li>
+      <li>Dark Mode</li>
+    </ul>
   </main>
 </body>
 

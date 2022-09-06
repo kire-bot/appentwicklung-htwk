@@ -15,7 +15,7 @@
     src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.82/dist/shoelace.js"></script>
 
   <link rel="stylesheet" href="/assets/styles/index.css">
-  <script type="module" src="/assets/scripts/index.js"></script>
+  <script defer type="text/javascript" src="/assets/scripts/index.js"></script>
 </head>
 
 <body>
@@ -25,17 +25,14 @@
 
     <sl-drawer label="Menü" placement="start" class="drawer">
       <nav>
-        <a href="/index.html">
+        <a href="/">
           <sl-icon name="house-door"></sl-icon>Home
         </a>
         <a href="/pages/profile.html">
           <sl-icon name="person"></sl-icon>Dein Profil
         </a>
-        <a href="/pages/privacy.html">
-          <sl-icon name="shield-lock"></sl-icon>Datenschutz
-        </a>
-        <a href="/pages/imprint.html">
-          <sl-icon name="info-circle"></sl-icon>Impressum
+        <a href="/pages/settings">
+          <sl-icon name="gear"></sl-icon>Einstellungen
         </a>
       </nav>
     </sl-drawer>
@@ -48,7 +45,8 @@
         <div class="avatar">
           <img src="https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png" alt="">
         </div>
-        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime eum adipisci cum, eveniet explicabo sunt
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime eum adipisci cum, eveniet
+          explicabo sunt
           atque, ipsa consectetur.</p>
       </div>
     </div>
