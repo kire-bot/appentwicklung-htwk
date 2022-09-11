@@ -21,7 +21,15 @@ header sl-icon-button::part(base) {
 header sl-drawer {
   --size: 75%;
   --body-spacing: 0 20px;
-  color: #000;
+}
+
+header sl-drawer::part(title) {
+  color: var(--color-text);
+}
+
+header sl-drawer::part(header),
+header sl-drawer::part(body) {
+  background-color: var(--color-main-bg);
 }
 
 sl-drawer nav {
@@ -32,11 +40,12 @@ sl-drawer nav {
 
 sl-drawer nav a {
   text-decoration: none;
-  color: var(--color-primary-dark);
+  color: var(--color-text);
   margin-bottom: 24px;
   font-size: 16px;
   display: flex;
   align-items: center;
+  gap: 8px;
   line-height: 1.5;
 }
 

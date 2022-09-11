@@ -7,11 +7,11 @@ body {
   max-width: 430px;
   margin: 0 auto;
   padding-top: 52px;
-  background-color: var(--color-background);
+  background-color: var(--color-main-bg);
   color: var(--color-text);
 }
 
 main h2 {
-  font-size: 20px;
+  font-size: 24px;
   padding: 0 var(--content-gap);
 }
