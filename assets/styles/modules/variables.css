@@ -7,5 +7,13 @@
   --color-gray-light: #eee;
   --color-gray-dark: #676767;
 
+  --color-text: #000;
+  --color-background: #fff;
+
   --content-gap: 16px;
+}
+
+.dark-mode {
+  --color-text: #fff;
+  --color-background: rgb(20, 20, 20);
 }

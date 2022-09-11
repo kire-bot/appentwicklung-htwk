@@ -1,12 +1,12 @@
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
-    .then((reg) => {
-      console.log('Service Worker registered', reg)
-    })
-    .catch((error) => {
-      console.log('Service Worker not registered', error)
-    })
-}
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/sw.js')
+//     .then((reg) => {
+//       console.log('Service Worker registered', reg)
+//     })
+//     .catch((error) => {
+//       console.log('Service Worker not registered', error)
+//     })
+// }
 
 const openDrawerButton = document.querySelector('#open-drawer')
 if (openDrawerButton) {
@@ -20,5 +20,28 @@ const goBackButton = document.querySelector('#go-back')
 if (goBackButton) {
   goBackButton.onclick = () => {
     window.history.back()
+  }
+}
+
+const darkModeSwitch = document.querySelector('#toggle-dark-mode')
+if (darkModeSwitch) {
+  darkModeSwitch.addEventListener('sl-change', event => {
+    const htmlElement = document.documentElement
+
+    if (event.target.checked) {
+      htmlElement.classList.add('dark-mode')
+      localStorage.setItem('darkMode', 'true')
+    } else {
+      htmlElement.classList.remove('dark-mode')
+      localStorage.setItem('darkMode', 'false')
+    }
+  })
+}
+
+if (JSON.parse(localStorage.getItem('darkMode'))) {
+  const htmlElement = document.documentElement
+  htmlElement.classList.add('dark-mode')
+  if (darkModeSwitch) {
+    darkModeSwitch.click()
   }
 }

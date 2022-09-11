@@ -7,6 +7,8 @@ body {
   max-width: 430px;
   margin: 0 auto;
   padding-top: 52px;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 main h2 {

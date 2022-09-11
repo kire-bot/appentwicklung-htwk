@@ -20,7 +20,7 @@
   <script defer type="text/javascript" src="/assets/scripts/index.js"></script>
 </head>
 
-<body>
+<body id="settings">
   <header>
     <sl-icon-button id="go-back" name="chevron-left" label="Zurück"></sl-icon-button>
     <div><strong>Fake Twitter</strong></div>
@@ -29,18 +29,24 @@
   <main>
     <h2>Einstellungen</h2>
 
-    <ul class="settings-list">
-      <li>
-        <a href="./profile-settings.html">Profil-Einstellungen</a>
-      </li>
-      <li>
-        <a href="./help.html">Hilfe</a>
-      </li>
-      <li>
-        <a href="#">Benachrichtigungen</a>
-      </li>
-      <li>Dark Mode</li>
-    </ul>
+    <div class="settings-list">
+      <a class="list-item" href="./profile-settings.html">
+        Profil-Einstellungen
+        <sl-icon name="chevron-right"></sl-icon>
+      </a>
+      <a class="list-item" href="./help.html">
+        Hilfe
+        <sl-icon name="chevron-right"></sl-icon>
+      </a>
+      <a class="list-item" href="./notifications.html">
+        Benachrichtigungen
+        <sl-icon name="chevron-right"></sl-icon>
+      </a>
+      <div class="list-item">
+        Dark Mode
+        <sl-switch id="toggle-dark-mode"></sl-switch>
+      </div>
+    </div>
   </main>
 </body>
 
