@@ -1,5 +1,6 @@
 const worker = self
 const staticCacheName = 'site-static-v2'
+const dynamicCacheName = 'site-dynamic-v1'
 const assets = [
   '/',
   '/index.html',
@@ -30,6 +31,9 @@ worker.addEventListener('install', (event) => {
 worker.addEventListener('activate', (event) => {
   console.log('Service Worker activated')
   event.waitUntil(
+    /**
+     * If new cache key is used, delete old one.
+     */
     caches.keys().then((keys) => {
       return Promise.all(keys
         .filter(key => key !== staticCacheName)
@@ -41,8 +45,17 @@ worker.addEventListener('activate', (event) => {
 
 worker.addEventListener('fetch', (event) => {
   event.respondWith(
+    /**
+     * If fetched resource is in cache, return path to cache. If not,
+     * try normal fetch and place path in dynamic cache.
+     */
     caches.match(event.request).then((cacheRes) => {
-      return cacheRes || fetch(event.request)
+      return cacheRes || fetch(event.request).then((fetchRes) => {
+        return caches.open(dynamicCacheName).then((cache) => {
+          cache.put(event.request.url, fetchRes.clone())
+          return fetchRes
+        })
+      })
     })
   )
 })
