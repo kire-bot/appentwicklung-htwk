@@ -16,6 +16,11 @@ if (openDrawerButton) {
   }
 }
 
+const drawer = document.querySelector('.drawer')
+if (drawer) {
+  drawer.hide()
+}
+
 const goBackButton = document.querySelector('#go-back')
 if (goBackButton) {
   goBackButton.onclick = () => {

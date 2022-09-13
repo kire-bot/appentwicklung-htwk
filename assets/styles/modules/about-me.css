@@ -1,19 +1,19 @@
-.profile .about-me {
+.about-me {
   display: flex;
   gap: 16px;
   padding: 0 var(--content-gap);
 }
 
-.profile .avatar {
+.about-me .avatar {
   width: 25%;
   margin: 0 auto;
 }
 
-.profile .avatar img {
+.about-me .avatar img {
   width: 100%;
 }
 
-.profile .text {
+.about-me .text {
   width: 75%;
   margin-top: 0;
 }

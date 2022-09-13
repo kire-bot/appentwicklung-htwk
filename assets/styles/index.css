@@ -2,8 +2,8 @@
 
 @import "./modules/variables.css";
 @import "./modules/general.css";
-@import "./modules/buttons.css";
+@import "./modules/button.css";
 @import "./modules/header.css";
-@import "./modules/newsfeed.css";
-@import "./modules/profile.css";
-@import "./modules/settings.css";
+@import "./modules/post.css";
+@import "./modules/about-me.css";
+@import "./modules/action-list.css";

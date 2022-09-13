@@ -1,35 +1,35 @@
-.newsfeed .entry {
+.post {
   margin: 8px 16px;
   padding: 16px;
   border-radius: 16px;
   background-color: var(--color-element-bg);
 }
 
-.newsfeed .header {
+.post .header {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.newsfeed .header .name {
+.post .header .name {
   font-weight: 700;
 }
 
-.newsfeed .header .user-name {
+.post .header .user-name {
   font-size: 14px;
   color: var(--color-gray);
   font-weight: 400;
 }
 
-.newsfeed .entry .avatar {
+.post .avatar {
   width: 15%;
 }
 
-.newsfeed .entry .avatar img {
+.post .avatar img {
   border-radius: 50%;
   width: 100%;
 }
 
-.newsfeed .entry .content .text {
+.post .content .text {
   margin: 0;
 }

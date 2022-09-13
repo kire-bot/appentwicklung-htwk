@@ -1,8 +1,8 @@
-.settings-list {
+.action-list {
   padding: 0 var(--content-gap);
 }
 
-.settings-list .list-item {
+.action-list .list-item {
   display: flex;
   text-decoration: none;
   color: var(--color-text);
