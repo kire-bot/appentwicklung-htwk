@@ -28,6 +28,14 @@ if (goBackButton) {
   }
 }
 
+const newPostButton = document.querySelector('#new-post-button')
+if (newPostButton) {
+  newPostButton.onclick = () => {
+    const newPostDialog = document.querySelector('#new-post-dialog')
+    newPostDialog.show()
+  }
+}
+
 const darkModeSwitch = document.querySelector('#toggle-dark-mode')
 if (darkModeSwitch) {
   darkModeSwitch.addEventListener('sl-change', event => {

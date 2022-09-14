@@ -1,0 +1,39 @@
+#new-post-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+#new-post-dialog::part(overlay) {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#new-post-dialog::part(panel) {
+  border-radius: 16px;
+  background-color: var(--color-main-bg);
+}
+
+#new-post-dialog::part(title) {
+  font-weight: 700;
+}
+
+#new-post-dialog::part(body) {
+  padding: 4px 20px;
+}
+
+#new-post-dialog .button {
+  margin-left: auto;
+}
+
+#new-post-dialog textarea {
+  background-color: var(--color-element-bg);
+  color: var(--color-text);
+  border: 0;
+  border-radius: 16px;
+  min-height: 140px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
