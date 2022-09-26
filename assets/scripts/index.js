@@ -1,3 +1,5 @@
+'use strict'
+
 const openDrawerButton = document.querySelector('#open-drawer')
 if (openDrawerButton) {
   openDrawerButton.onclick = function () {
