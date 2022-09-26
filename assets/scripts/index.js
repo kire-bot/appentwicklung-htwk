@@ -20,11 +20,19 @@ if (goBackButton) {
   }
 }
 
-const newPostButton = document.querySelector('#new-post-button')
-if (newPostButton) {
-  newPostButton.onclick = () => {
-    const newPostDialog = document.querySelector('#new-post-dialog')
-    newPostDialog.show()
+const openPostDialogButton = document.querySelector('#open-post-dialog')
+if (openPostDialogButton) {
+  openPostDialogButton.onclick = () => {
+    const postDialog = document.querySelector('#post-dialog')
+    postDialog.show()
+  }
+}
+
+const closePostDialogButton = document.querySelector('#close-post-dialog')
+if (closePostDialogButton) {
+  closePostDialogButton.onclick = () => {
+    const postDialog = document.querySelector('#post-dialog')
+    postDialog.hide()
   }
 }
 

@@ -41,7 +41,7 @@
   </header>
 
   <main>
-    <h2>Newsfeed</h2>
+    <h1>Newsfeed</h1>
     <div class="newsfeed">
       <div class="post">
         <div class="header">
@@ -121,13 +121,13 @@
       </div>
     </div>
 
-    <button id="new-post-button" class="button round">
+    <button id="open-post-dialog" class="button round">
       <sl-icon name="plus" label="Neuer Post"></sl-icon>
     </button>
 
-    <sl-dialog id="new-post-dialog" label="Neuer Post" class="dialog-overview">
+    <sl-dialog id="post-dialog" label="Neuer Post" class="dialog-overview">
       <textarea></textarea>
-      <button class="button" slot="footer">Posten</button>
+      <button id="close-post-dialog" class="button" slot="footer">Posten</button>
     </sl-dialog>
   </main>
 </body>
