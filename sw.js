@@ -59,6 +59,12 @@ worker.addEventListener('fetch', (event) => {
           return fetchRes
         })
       })
-    }).catch(() => caches.match('/pages/fallback.html'))
+    }).catch(() => {
+      if (event.request.url.indexOf('.html') > -1) {
+        // Only return fallback if the request is for an html page.
+        // Todo: Is also not working for /pages/settings, because of the missing .html!
+        return caches.match('/pages/fallback.html')
+      }
+    })
   )
 })
