@@ -4,13 +4,14 @@ const dynamicCacheName = 'site-dynamic-v1'
 const assets = [
   '/',
   '/index.html',
+  '/pages/fallback.html',
   '/assets/scripts/index.js',
   '/assets/styles/index.css',
-  '/assets/styles/modules/buttons.css',
+  '/assets/styles/modules/button.css',
   '/assets/styles/modules/general.css',
   '/assets/styles/modules/header.css',
-  '/assets/styles/modules/newsfeed.css',
-  '/assets/styles/modules/profile.css',
+  '/assets/styles/modules/post.css',
+  '/assets/styles/modules/about-me.css',
   '/assets/styles/modules/variables.css',
   '/assets/images/icon.png',
   'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.82/dist/themes/light.css',
@@ -23,6 +24,7 @@ worker.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(staticCacheName).then((cache) => {
       console.log('Caching assets')
+      // On error: Are all paths in assets[] correct?
       cache.addAll(assets)
     })
   )
@@ -36,7 +38,7 @@ worker.addEventListener('activate', (event) => {
      */
     caches.keys().then((keys) => {
       return Promise.all(keys
-        .filter(key => key !== staticCacheName)
+        .filter(key => key !== staticCacheName && key !== dynamicCacheName)
         .map(key => caches.delete(key))
       )
     })
@@ -48,6 +50,7 @@ worker.addEventListener('fetch', (event) => {
     /**
      * If fetched resource is in cache, return path to cache. If not,
      * try normal fetch and place path in dynamic cache.
+     * If nothing is found (offline), go to fallback.html.
      */
     caches.match(event.request).then((cacheRes) => {
       return cacheRes || fetch(event.request).then((fetchRes) => {
@@ -56,6 +59,6 @@ worker.addEventListener('fetch', (event) => {
           return fetchRes
         })
       })
-    })
+    }).catch(() => caches.match('/pages/fallback.html'))
   )
 })
