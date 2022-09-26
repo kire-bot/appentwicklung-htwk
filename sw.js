@@ -19,6 +19,17 @@ const assets = [
   'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'
 ]
 
+// Cache size limit
+function limitCacheSize(name, size) {
+  chaches.open(name).then((cache) => {
+    cache.keys().then((keys) => {
+      if (keys.length > size) {
+        cache.delte(keys[0]).then(limitCacheSize(name, size))
+      }
+    })
+  })
+}
+
 worker.addEventListener('install', (event) => {
   console.log('Service Worker installed')
   event.waitUntil(
@@ -56,10 +67,11 @@ worker.addEventListener('fetch', (event) => {
       return cacheRes || fetch(event.request).then((fetchRes) => {
         return caches.open(dynamicCacheName).then((cache) => {
           cache.put(event.request.url, fetchRes.clone())
+          limitCacheSize(dynamicCacheName, 3)
           return fetchRes
         })
       })
-    }).catch(() => {
+    }).catch((e) => {
       if (event.request.url.indexOf('.html') > -1) {
         // Only return fallback if the request is for an html page.
         // Todo: Is also not working for /pages/settings, because of the missing .html!
