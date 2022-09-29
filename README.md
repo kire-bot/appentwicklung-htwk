@@ -57,15 +57,9 @@
 
 Adresse, zB im Format `192.168.xx.xx`, mit angehangenem Port (in VS-Code unten rechts) im Smartphone-Browser eingeben (`192.168.2.311:5500`).
 
-### Components mit Shoelace
-
-[Shoelace](https://shoelace.style/) ist eine Bibliothek für Web-Components. Die Components bilden fertige Elemente wie Buttons, Listen und Slider die aus der Bibliothek bezogen werden können. Dadurch müssen wir keine eigenen Elemente entwickeln, sondern können fertige verwenden und sie nach Belieben anpassen.
-
-Alternativen bilden zB [Bootstrap](https://shoelace.style/), [Foundation](https://get.foundation/) und [Bulma](https://bulma.io/). Hierbei handelt es sich um CSS-Frameworks, die in der Anwendung jedoch anders funktionieren als Shoelace.
-
 ### Seiten & Unterseiten (HTML)
 
-Als Einstiegspunkt der App dient `index.html`. Alle Unterseiten werden im Ordner `/pages` organisiert. So ergibt sich zB der Pfad `127.0.0.1:5500/pages/profile.html` als Seite für das Nutzerprofil. 
+Als Einstiegspunkt der App dient `index.html`. Alle Unterseiten werden im Ordner `/pages` organisiert. So ergibt sich zB der Pfad `127.0.0.1:5500/pages/profile.html` als Seite für das Nutzerprofil.
 
 Soll einer Unterseite weitere Unterseiten erhalten, so geschieht dies über weitere Unterordner in `/pages`. Dabei dient eine weitere `index.html` als Einstiegspunkt für diesen Ordner. So öffnet zB der Pfad `127.0.0.1:5500/pages/settings` die Datei `/pages/settings/index.html`. Weitere Unterseiten entstehen über entsprechende HTML-Dateien.
 
@@ -78,3 +72,9 @@ In `/modules/variables.css` werden CSS-Variablen definiert, die im gesamten CSS 
 ### Funktionen (JavaScript)
 
 Das benötigte JavaScript befindet sich unter `/assets/scripts`. Da die Funktionen der App überschaubar sind, kann der benötigte Code in einer einzelnen `index.js` gesammelt werden.
+
+### Components mit Shoelace
+
+[Shoelace](https://shoelace.style/) ist eine Bibliothek für Web-Components. Die Components bilden fertige Elemente wie Buttons, Listen und Slider die aus der Bibliothek bezogen werden können. Dadurch müssen wir keine eigenen Elemente entwickeln, sondern können fertige verwenden und sie nach Belieben anpassen.
+
+Alternativen bilden zB [Bootstrap](https://shoelace.style/), [Foundation](https://get.foundation/) und [Bulma](https://bulma.io/). Hierbei handelt es sich um CSS-Frameworks, die in der Anwendung jedoch anders funktionieren als Shoelace.
