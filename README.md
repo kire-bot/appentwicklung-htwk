@@ -2,12 +2,22 @@
 
 > **Hinweis:** Über den Branch (oben auf "main" klicken) kann zwischen verschiedenen Versionen des Codes gewechselt werden. "main" zeigt den fertigen Code der ganzen App. Die Auswahl eines Datums zeigt den Stand der jeweiligen Vorlesung.
 
-## Links
+## 1 Einstieg
 
-- https://codeshare.io/j0bLeD – zum Teilen von Code und Links während der Vorlesung
-- https://shoelace.style/ – verwendete Components-Bibliothek
+### Links
 
-## Benötigte Software
+#### Zur Vorlesung
+
+- Zum Teilen von Code und Links während der Vorlesung: https://codeshare.io/j0bLeD
+- Verwendete Components-Bibliothek: https://shoelace.style/
+
+#### Zum Nachschlagen
+
+- Übersicht zu HTML Tags: https://www.mediaevent.de/html/html5-tags.html
+- Übersicht zu CSS Eigenschaften: https://www.mediaevent.de/css/eigenschaften.html –
+- Grundlagen zu JavaScript: https://www.mediaevent.de/javascript/
+
+### Benötigte Software
 
 1. Browser (Chrome, Firefox, Edge, Safari)
 
@@ -15,7 +25,9 @@
 
 3. "Live Server" Erweiterung in Visual Studio Code – Um den aktuellen Entwicklungsstand der App zu sehen, brauchen wir einen lokalen Server. Dieser kann mit dieser Erweiterung gestartet werden.
 
-## Projekt-Struktur
+## 2 Entwicklung
+
+### Projekt-Struktur
 
 `index.html` – Einstiegspunkt der App
 
@@ -25,7 +37,9 @@
 
 `manifest.json` – Metadaten der App (Name, Farben, Icons)
 
-## Entwicklung
+`/.vscode` – Konfigurations-Dateien für Visual Studio Code
+
+### App entwickeln
 
 **Entwicklungsserver starten** – In VS-Code unten rechts auf "Go Live" klicken. Dadruch wird über die Live Server Erweiterung ein Server gestartet. Der Browser öffnet automatisch einen neuen Tab unter zB `127.0.0.1:5500`.
 
@@ -43,7 +57,7 @@
 
 Adresse, zB im Format `192.168.xx.xx`, mit angehangenem Port (in VS-Code unten rechts) im Smartphone-Browser eingeben (`192.168.2.311:5500`).
 
-## Components mit Shoelace
+### Components mit Shoelace
 
 [Shoelace](https://shoelace.style/) ist eine Bibliothek für Web-Components. Die Components bilden fertige Elemente wie Buttons, Listen und Slider die aus der Bibliothek bezogen werden können. Dadurch müssen wir keine eigenen Elemente entwickeln, sondern können fertige verwenden und sie nach Belieben anpassen.
 
