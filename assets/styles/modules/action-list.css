@@ -1,7 +1,3 @@
-.action-list {
-  padding: 0 var(--content-gap);
-}
-
 .action-list .list-item {
   display: flex;
   text-decoration: none;

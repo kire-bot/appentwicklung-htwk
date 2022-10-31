@@ -1,7 +1,6 @@
 .about-me {
   display: flex;
   gap: 16px;
-  padding: 0 var(--content-gap);
 }
 
 .about-me .avatar {
