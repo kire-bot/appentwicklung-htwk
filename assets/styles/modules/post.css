@@ -1,0 +1,30 @@
+.post {
+  margin: 8px 0;
+  background-color: var(--color-element-bg);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.post .header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post .header img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.post .header .name {
+  font-weight: 700;
+}
+
+.post .header .user-name {
+  font-size: 14px;
+  color: var(--color-gray);
+}
+
+.post p {
+  margin-bottom: 0;
+}

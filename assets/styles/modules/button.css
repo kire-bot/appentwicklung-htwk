@@ -1,0 +1,22 @@
+.button {
+  background-color: var(--color-primary);
+  border: 0;
+  padding: 16px 24px;
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+.button.round {
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  font-size: 32px;
+  padding: 0;
+  line-height: 0;
+}
+
+#open-popup {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
